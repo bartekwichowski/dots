@@ -1,0 +1,10 @@
+[Unit]
+Description=Xscreensaver
+
+[Service]
+ExecStartPre=/usr/bin/xscreensaver-command -exit
+ExecStart=/usr/bin/xscreensaver -no-splash
+ExecStop=/usr/bin/xscreensaver-command -exit
+
+[Install]
+WantedBy=default.target  
