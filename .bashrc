@@ -46,7 +46,7 @@ alias xresources='xrdb ~/.Xresources'
 alias reload="i3-msg reload; i3-msg restart"
 
 alias ls='ls --color=auto'
-alias kill-port="fuser -k \$1/tcp"
+alias kill-port="fuser -k $1/tcp"
 alias config='/usr/bin/git --git-dir=/home/bartek/.cfg/ --work-tree=/home/bartek'
 alias update='curl -s "https://www.archlinux.org/mirrorlist/?country=DE&country=PL&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -'
 
