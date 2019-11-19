@@ -98,10 +98,8 @@ bindsym $mod+a focus parent
 set $ws1 "1: idea"
 set $ws2 "2: ter"
 set $ws3 "3: web"
-set $ws4 "4: post"
-set $ws5 "5: slack"
-set $ws6 "6: mail"
-set $ws7 "7: kraken"
+set $ws4 "4: slack"
+set $ws5 "5: mail"
 set $ws8 "8: monitor"
 set $ws9 "9: vpn"
 set $ws10 "10: rdp"
@@ -147,16 +145,11 @@ exec --no-startup-id urxvt
 for_window [class="web"] move to workspace $ws3
 exec --no-startup-id chromium www.google.com --class="web"
 
-for_window [class="Postman"] move to workspace $ws4
-exec --no-startup-id postman
-
-for_window [class="Slack"] move to workspace $ws5
+for_window [class="Slack"] move to workspace $ws4
 exec --no-startup-id slack
 
-for_window [class="Thunderbird"] move to workspace $ws6
+for_window [class="Thunderbird"] move to workspace $ws5
 exec --no-startup-id thunderbird
-
-for_window [class="GitKraken"] move to workspace $ws7
 
 for_window [class="^URxvt$" instance="^monitor$"] move to workspace $ws8
 
@@ -167,9 +160,8 @@ for_window [class="^URxvt$" instance="^rdp$"] move to workspace $ws10
 assign [class="jetbranins-idea"] $ws1
 assign [class="^URxvt$"] $ws2
 assign [class="Chromium"] $ws3
-assign [class="Postman"] $ws4
-assign [class="Slack"] $ws5
-assign [class="Thunderbird"] $ws6
+assign [class="Slack"] $ws4
+assign [class="Thunderbird"] $ws5
 assign [class="^URxvt$" instance="^monitor$"] $ws8
 assign [class="^URxvt$" instance="^vpn$"] $ws9
 assign [class="^URxvt$" instance="^rdp$"] $ws10

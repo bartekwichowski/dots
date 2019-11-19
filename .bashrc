@@ -168,3 +168,5 @@ if [ -f ~/.project ]; then
   . ~/.project
 fi
 
+export GIT_USERNAME='BWichowski'
+export GIT_PASSWORD='Bartek1q2w3e4r'
