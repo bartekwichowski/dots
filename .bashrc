@@ -101,6 +101,11 @@ alias g_master="git reset --hard; git checkout master; git reset --hard origin/m
 alias g_prune="git remote prune origin"
 alias g_clean="git branch | xargs git branch -D && git pull "
 
+### python env
+export WORKON_HOME=~/.virtualenvs
+source /usr/bin/virtualenvwrapper_lazy.sh
+
+
 function g_only_master() {
     for remote in `git branch -r `; do git branch --track $remote; done
     git branch --merged master | grep -v master | cut -d/ -f2- | xargs -n 1 git push --delete origin

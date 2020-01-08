@@ -2,9 +2,13 @@
 Description=Xscreensaver
 
 [Service]
-ExecStartPre=/usr/bin/xscreensaver-command -exit
-ExecStart=/usr/bin/xscreensaver -no-splash
-ExecStop=/usr/bin/xscreensaver-command -exit
+Type=simple
+Environment=XAUTHORITY=%h/.Xauthority
+Environment=DISPLAY=:0
+ExecStart=/usr/bin/xscreensaver -nosplash
+ExecStop=/usr/bin/xscreensaver
+RemainAfterExit=yes
 
 [Install]
-WantedBy=default.target  
+WantedBy=graphical.target
+

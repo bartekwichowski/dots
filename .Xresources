@@ -72,7 +72,21 @@ URxvt*color15 : #EEEEEC
 Xft.autohint: 0
 Xft.antialias: 1
 Xft.hinting: true
-Xft.hintstyle: hintslight
+! Xft.hintstyle: hintslight
 Xft.dpi: 96
 Xft.rgba: rgb
 Xft.lcdfilter: lcddefault
+
+
+
+! xft
+Xft.hintstyle: hintfull
+
+! XScreenSaver font settings
+xscreensaver.Dialog.headingFont:        -*-dejavu sans-bold-r-*-*-*-160-*-*-*-*-*-*
+xscreensaver.Dialog.bodyFont:           -*-dejavu sans-bold-r-*-*-*-120-*-*-*-*-*-*
+xscreensaver.Dialog.labelFont:          -*-dejavu sans-bold-r-*-*-*-120-*-*-*-*-*-*
+xscreensaver.Dialog.unameFont:          -*-dejavu sans-bold-r-*-*-*-80-*-*-*-*-*-*
+xscreensaver.Dialog.buttonFont:         -*-dejavu sans-bold-r-*-*-*-120-*-*-*-*-*-*
+xscreensaver.Dialog.dateFont:           -*-dejavu sans-medium-r-*-*-*-80-*-*-*-*-*-*
+xscreensaver.Dialog.passwdFont:         -*-dejavu sans mono-medium-r-*-*-*-85-*-*-*-*-*-*
