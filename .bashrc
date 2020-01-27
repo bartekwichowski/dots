@@ -17,6 +17,10 @@ export PS1="\[\033[38;5;195m\]\u\[$(tput sgr0)\]\[\033[38;5;15m\] \[$(tput sgr0)
 
 alias sudo='sudo '
 
+### cd to work folder
+WORK=/home/bartek/IdeaProjects
+cd $WORK
+
 ### user environment
 export M2_HOME="/opt/maven"
 export JAVA_HOME="/usr/lib/jvm/default"
@@ -49,6 +53,9 @@ alias ls='ls --color=auto'
 alias kill-port="fuser -k $1/tcp"
 alias config='/usr/bin/git --git-dir=/home/bartek/.cfg/ --work-tree=/home/bartek'
 alias update='curl -s "https://www.archlinux.org/mirrorlist/?country=DE&country=PL&protocol=https&use_mirror_status=on" | sed -e 's/^#Server/Server/' -e '/^#/d' | rankmirrors -n 5 -'
+
+### intellij
+alias idea="/bin/intellij-idea-ultimate-edition "
 
 ### docker
 alias d_stop="docker stop \$(docker ps -aq)"
@@ -172,3 +179,4 @@ fi
 if [ -f ~/.project ]; then
   . ~/.project
 fi
+
